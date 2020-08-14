@@ -1,0 +1,32 @@
+<h4 class="title">Aadhaar</h4>
+<div style="margin: 30px">
+<table id="display_table" class="display responsive nowrap" style="width: 100%">
+	<thead>
+		<tr>
+			<th>No</th>
+			<th>First Name</th>
+			<th>Last Name</th>
+			<th>Address</th>
+			<th>City</th>
+			<th>State</th>
+			<th>Zip</th>
+			<th>Aadhaar</th>
+		</tr>
+	</thead>
+	<tbody>
+		<% for (var i = 0; i < data.length; i++) { %>
+			<tr>
+				<% var con = data[i]; %>
+				<td></td>
+				<td><%= con.first_name %></td>
+				<td><%= con.last_name %></td>
+				<td><%= con.address %></td>
+				<td><%= con.city %></td>
+				<td><%= con.state %></td>
+				<td><%= con.zip %></td>
+				<td><%= con.aadhaar %></td>
+			</tr>
+		<% } %>
+	</tbody>
+</table>
+</div>

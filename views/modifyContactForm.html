@@ -1,0 +1,79 @@
+<h4 class="title">Modify Aadhaar Info</h4>
+<form id="modifyContactForm" class="form-border">
+	<div class="form-row">
+		<div class="form-group col-md-3">
+			<label for="first_name">First Name</label>
+			<input type="text" class="form-control" name="first_name" value="<%= data.first_name %>" placeholder="First Name">
+		</div>
+		<div class="form-group col-md-3">
+			<label for="last_name">Last Name</label>
+			<input type="text" class="form-control" name="last_name" value="<%= data.last_name %>" placeholder="Last Name">
+		</div>
+	</div>
+
+	<div class="form-row">
+	<div class="form-group col-md-6">
+		<label for="address">Address</label>
+		<input type="text" class="form-control" name="address" value="<%= data.address %>" placeholder="1234 Main St">
+	</div>
+	</div>
+
+	<div class="form-row">
+	<div class="form-group col-md-2">
+		<label for="city">City</label>
+		<input type="text" class="form-control" name="city" value="<%= data.city %>">
+	</div>
+	<div class="form-group col-md-2">
+		<label for="state">State</label>
+		<select id="state" name="state" class="form-control">
+			<option>Andhra Pradesh</option>
+			<option>Arunachal Pradesh</option>
+			<option>Assam</option>
+			<option>Bihar</option>
+			<option>Chhattisgarh</option>
+			<option>Goa</option>
+			<option>Gujarat</option>
+			<option>Haryana</option>
+			<option>Himachal Pradesh</option>
+			<option>Jammu & Kashmir</option>
+			<option>Jharkhand</option>
+			<option>Karnataka</option>
+			<option>Kerala</option>
+			<option>Madhya Pradesh</option>
+			<option>Maharashtra</option>
+			<option>Manipur</option>
+			<option>Meghalaya</option>
+			<option>Mizoram</option>
+			<option>Nagaland</option>
+			<option>Orissa</option>
+			<option>Punjab</option>
+			<option>Rajasthan</option>
+			<option>Sikkim</option>
+			<option>Tamil Nadu</option>
+			<option>Telangana</option>
+			<option>Tripura</option>
+			<option>Uttar Pradesh</option>
+			<option>Uttarakhand</option>
+			<option>West Bengal</option>
+		</select>
+	</div>
+	</div>
+
+	<div class="form-row">
+	<div class="form-group col-md-2">
+		<label for="zip">Zip</label>
+		<input type="number" class="form-control" name="zip" value="<%= data.zip %>" placeholder="Zip code. Only digits">
+	</div>
+
+	<div class="form-group col-md-2">
+		<label for="aadhaar">Aadhaar</label>
+		<input type="number" class="form-control" name="aadhaar" value="<%= data.aadhaar %>" placeholder="Aadhaar number. 12 digits only">
+	</div>
+	</div>
+
+	<div class="form-row">
+	<div class="form-group col-md-2">
+		<button type="submit" id="modifySubmit" class="btn btn-primary" accesskey="M">MODIFY</button>
+	</div>
+	</div>
+</form>

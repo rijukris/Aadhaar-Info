@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Aadhaar Info</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
+	<link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.dataTables.min.css">
+  <link rel="stylesheet" href="https://jqueryvalidation.org/files/demo/site-demos.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #1388D8;">
+  <a id="home" class="navbar-brand" style="color: white" href="#">Aadhaar-Info</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a id="add" class="nav-link" style="color: white" href="#">Add</a>
+      </li>
+      <li class="nav-item">
+        <a id="modify" class="nav-link" style="color: white" href="#">Modify</a>
+      </li>
+      <li class="nav-item">
+        <a id="delete" class="nav-link" style="color: white" href="#">Delete</a>
+      </li>
+      <li class="nav-item">
+        <a id="display" class="nav-link" style="color: white" href="#">Display</a>
+      </li>
+      <li class="nav-item">
+        <a id="browse" class="nav-link" style="color: white" href="#">Browse</a>
+      </li>
+    </ul>
+    <div id="aadhaar_count" style="float: right; color: white; font-weight: bold;" title="Total Contacts"></div>
+    <form id="searchForm" class="form-inline my-2 my-sm-0 searchForm">
+      <input id="pattern" name="pattern" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <img id="searchImg" src='images/search.svg'/>
+    </form>
+  </div>
+</nav>
+<div class="row">
+  <div id="main" class="column left"></div>
+  <div id="rhs" class="column right">
+    <div id="qrcode" class="column right qrcode">
+    </div>
+    <div id="pagecount" class="pagecount"></div>
+  </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/additional-methods.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/kjua@0.6.0/dist/kjua.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
